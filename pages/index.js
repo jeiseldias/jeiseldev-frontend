@@ -20,19 +20,19 @@ export default function Home() {
             <section className={styles.SocialMedia}>
                 <ul>
                     <li>
-                        <a href='https://www.linkedin.com/in/jeisel/' target='_blank' rel='noopener'>
+                        <a href='https://www.linkedin.com/in/jeisel/' target='_blank' rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faLinkedin} />
                         </a>
                     </li>
 
                     <li>
-                        <a href='https://github.com/jeiseldias' target='_blank' rel='noopener'>
+                        <a href='https://github.com/jeiseldias' target='_blank' rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faGithub} />
                         </a>
                     </li>
 
                     <li>
-                        <a href='https://www.instagram.com/jeiselsilva/' target='_blank' rel='noopener'>
+                        <a href='https://www.instagram.com/jeiselsilva/' target='_blank' rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faInstagram} />
                         </a>
                     </li>
