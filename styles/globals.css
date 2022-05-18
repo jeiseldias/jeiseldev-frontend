@@ -1,9 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --background: #1D1D1D;
+    --border: #282828;
+    --shadow: #181818;
+
+    --blue: #5FB6D9;
+    --gray: #909096;
+    --green: #52F298;
+
+    --black: #000000;
+    --red: #FF0000;
+    
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Space Mono",sans-serif;
+
+  background-color: var(--background);
 }
 
 a {

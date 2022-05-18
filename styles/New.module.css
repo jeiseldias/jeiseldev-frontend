@@ -1,0 +1,83 @@
+.container {
+    display: flex;
+}
+
+.Assistant {
+    width: calc((100vw - 135px) / 2);
+    height: 100vh;
+}
+
+.Infos {
+    width: calc((100vw - 135px) / 2);
+    height: 100vh;
+}
+
+.Links {
+    padding: 5vw 0;
+}
+
+.Links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.Links li {
+    cursor: pointer;
+
+    border-top: 1px solid var(--border);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1em 0;
+
+    color: var(--gray);
+}
+
+.Links li:hover { 
+    color: var(--blue);
+}
+
+.Links li:last-child {
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1em 0;
+}
+
+.Logo {
+    width: 135px;
+    height: 180px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--black);
+}
+
+.Menu {
+    width: 135px;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: var(--shadow);
+}
+
+.Shortcuts {
+    display: flex;
+    justify-content: space-around;
+
+    padding: 0 20px 20vh 20px;
+    
+    color: var(--gray);
+}
