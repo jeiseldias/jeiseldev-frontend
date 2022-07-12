@@ -3,7 +3,22 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons'
 import styles from '../styles/New.module.css'
 
+import { GoogleMap, useLoadScript, Marker } from '@react-google-maps/api'
+
 export default function Home() {
+    const { isLoaded } = useLoadScript({ 
+        googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
+    });
+
+    const MapCenter = {lat:-22.73293, lng: -45.11413};
+    const MapOptions = {
+        disableDefaultUI: true,
+        disableDoubleClickZoom: true,
+        
+    };
+
+    if (!isLoaded) return <div>Loading</div>;
+
     return (
         <div className={styles.container}>
             <Head>
@@ -214,8 +229,16 @@ export default function Home() {
                         <button>Enviar mensagem</button>
                     </div>
 
-                    <div className={styles.ColumnImage}>
-                        MAPA
+                    <div className={styles.ColumnData}>
+                        <GoogleMap 
+                        zoom={18} 
+                        center={{lat:-22.73293, lng: -45.11413}} 
+                        clickableIcons={false}
+                        options={MapOptions}
+                        mapContainerClassName="map-container"
+                        >
+                            <Marker position={{lat:-22.733240, lng: -45.113932}} />
+                        </GoogleMap>
                     </div>
                 </div>
             </section>

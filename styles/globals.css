@@ -37,6 +37,13 @@ a {
   box-sizing: border-box;
 }
 
+.map-container {
+    display: flex;
+    width: 100%;
+
+    flex: 1;
+}
+
 ::-webkit-scrollbar {
     width: 2px;
 }

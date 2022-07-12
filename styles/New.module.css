@@ -32,7 +32,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-basis: 300px;
+    flex-basis: calc(25% - 10px);
     flex-grow: 1;
 
     margin: 5px;
@@ -102,6 +102,7 @@
 }
 
 .ColumnData {
+    margin-left: 20px;
     margin-right: 20px;
 }
 
