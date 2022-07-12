@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lexend:wght@100;300;400;700;900&family=Roboto:wght@100;400;700;900&family=Space+Mono:wght@400;700&display=swap');
 
 :root {
     --background: #1D1D1D;
@@ -6,12 +6,17 @@
     --shadow: #181818;
 
     --blue: #5FB6D9;
-    --gray: #909096;
+    --gray: #606473;
+    --lightgray: #2B2B2B;
     --green: #52F298;
 
     --black: #000000;
-    --red: #FF0000;
-    
+    --brown: #D99F5F;
+    --pink: #D97588;
+    --purple: #CE75D9;
+    --red: #F25F52;
+    --white: #FFFFFF;
+    --yellow: #D9D14A;
 }
 
 html,
@@ -30,4 +35,20 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+  
+::-webkit-scrollbar-track {
+    background: var(--shadow)
+}
+  
+::-webkit-scrollbar-thumb {
+    background: var(--gray)
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }

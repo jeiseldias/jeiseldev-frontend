@@ -2,14 +2,170 @@
     display: flex;
 }
 
-.Assistant {
-    width: calc((100vw - 135px) / 2);
-    height: 100vh;
+.About, .Skills, .Contact {
+    display: flex;
+    justify-content: center;
+}
+
+.About h2, .Skills h2, .Portfolio h2, .Contact h2 {
+    font-size: 4rem;
+    line-height: 4rem;
+    color: var(--green);
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+
+.Projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Work {
+    max-width: calc(25% - 10px);
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 300px;
+    flex-grow: 1;
+
+    margin: 5px;
+
+    background-color: var(--shadow);
+
+    padding: 20px;
+}
+
+.Work a {
+    width: 120px;
+
+    padding: 8px 16px;
+    border-radius: 8px;
+
+    text-align: center;
+    font-size: 14px;
+    font-family: "Space Mono";
+    color: var(--shadow);
+
+    background-color: var(--gray);
+}
+
+.Work a:hover {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.Work a:active {
+    background-color: var(--gray);
+    color: var(--shadow);
+}
+
+.Work h3 {
+    font-size: 22px;
+    margin: 0;
+}
+
+.Work span, .Work p {
+    font-size: 14px;
+    font-family: "Space Mono";
+    line-height: 18px;
+    color: var(--gray);
+}
+
+.Work img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.WorkButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Skills {
+    flex-direction: row-reverse;
+}
+
+.ColumnData, .ColumnResume, .ColumnImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.ColumnData {
+    margin-right: 20px;
+}
+
+.ColumnImage {
+    align-items: center;
+}
+
+.ColumnImage img {
+    max-width: 70%;
+    border-radius: 50%;
+}
+
+.ColumnResume span {
+    color: var(--blue);
 }
 
 .Infos {
-    width: calc((100vw - 135px) / 2);
+    width: calc((100vw - 135px));
     height: 100vh;
+    padding: 50px 50px;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    font-family: "Roboto";
+    font-size: 1.2rem;
+
+    color: var(--white);
+}
+
+.Intro, .About, .Skills, .Portfolio, .Contact {
+    width: calc((100vw - 235px));
+    height: calc(100vh - 100px);
+
+    margin-bottom: 50px;
+}
+
+.Intro {
+    display: flex;
+    align-items: center;
+}
+
+.Intro h1 {
+    font-size: 8rem;
+    line-height: 7.5rem;
+    color: var(--white);
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+
+.Intro h1 span {
+    color: var(--green);
+}
+
+.Intro h1 strong {
+    color: var(--blue);
+}
+
+.Portfolio {
+    height: auto;
 }
 
 .Links {
@@ -73,6 +229,21 @@
     background-color: var(--shadow);
 }
 
+.ProgressBar {
+    width: 100%;
+    height: 5px;
+
+    border-radius: 5px;
+    margin-bottom: 30px;
+
+    background-color: var(--gray);
+}
+
+.Progress {
+    height: 5px;
+    border-radius: 5px;
+}
+
 .Shortcuts {
     display: flex;
     justify-content: space-around;
@@ -80,4 +251,44 @@
     padding: 0 20px 20vh 20px;
     
     color: var(--gray);
+}
+
+.Contact input, .Contact textarea {
+    border: none;
+    border-bottom: 3px solid var(--lightgray);
+    padding: 18px;
+    margin-bottom: 16px;
+
+    font-size: 16px;
+    color: var(--white);
+
+    background-color: var(--lightgray);
+}
+
+.Contact input:focus, .Contact textarea:focus {
+    outline: none;
+    border-bottom: 3px solid var(--blue);
+}
+
+.Contact button {
+    width: 180px;
+
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+
+    text-align: center;
+    font-size: 14px;
+    font-family: "Space Mono";
+    color: var(--shadow);
+
+    background-color: var(--gray);
+}
+
+.Contact button:hover {
+    background-color: var(--blue);
+}
+
+.Contact button:active {
+    background-color: var(--gray);
 }
