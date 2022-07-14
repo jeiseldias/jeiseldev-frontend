@@ -417,8 +417,8 @@ export default function Home() {
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non sem massa. Nulla tincidunt, quam at mollis aliquam, quam erat porttitor nunc, non dictum dui est id ligula.</p>
 
                             <div className={styles.WorkButtons}>
-                                <a href='https://github.com/jeiseldias' target='_blank'>visitar</a>
-                                <a href='https://github.com/jeiseldias' target='_blank'>repositório</a>
+                                <a href='https://github.com/jeiseldias' target='_blank' rel="noreferrer">visitar</a>
+                                <a href='https://github.com/jeiseldias' target='_blank' rel="noreferrer">repositório</a>
                             </div>
                         </div>
 
@@ -428,8 +428,8 @@ export default function Home() {
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non sem massa. Nulla tincidunt, quam at mollis aliquam, quam erat porttitor nunc, non dictum dui est id ligula.</p>
 
                             <div className={styles.WorkButtons}>
-                                <a href='https://github.com/jeiseldias' target='_blank'>visitar</a>
-                                <a href='https://github.com/jeiseldias' target='_blank'>repositório</a>
+                                <a href='https://github.com/jeiseldias' target='_blank' rel="noreferrer">visitar</a>
+                                <a href='https://github.com/jeiseldias' target='_blank' rel="noreferrer">repositório</a>
                             </div>
                         </div>
 
@@ -439,8 +439,8 @@ export default function Home() {
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non sem massa. Nulla tincidunt, quam at mollis aliquam, quam erat porttitor nunc, non dictum dui est id ligula.</p>
 
                             <div className={styles.WorkButtons}>
-                                <a href='https://github.com/jeiseldias' target='_blank'>visitar</a>
-                                <a href='https://github.com/jeiseldias' target='_blank'>repositório</a>
+                                <a href='https://github.com/jeiseldias' target='_blank' rel="noreferrer">visitar</a>
+                                <a href='https://github.com/jeiseldias' target='_blank' rel="noreferrer">repositório</a>
                             </div>
                         </div>
 
@@ -450,8 +450,8 @@ export default function Home() {
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non sem massa. Nulla tincidunt, quam at mollis aliquam, quam erat porttitor nunc, non dictum dui est id ligula.</p>
 
                             <div className={styles.WorkButtons}>
-                                <a href='https://github.com/jeiseldias' target='_blank'>visitar</a>
-                                <a href='https://github.com/jeiseldias' target='_blank'>repositório</a>
+                                <a href='https://github.com/jeiseldias' target='_blank' rel="noreferrer">visitar</a>
+                                <a href='https://github.com/jeiseldias' target='_blank' rel="noreferrer">repositório</a>
                             </div>
                         </div>
 
@@ -461,8 +461,8 @@ export default function Home() {
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non sem massa. Nulla tincidunt, quam at mollis aliquam, quam erat porttitor nunc, non dictum dui est id ligula.</p>
 
                             <div className={styles.WorkButtons}>
-                                <a href='https://github.com/jeiseldias' target='_blank'>visitar</a>
-                                <a href='https://github.com/jeiseldias' target='_blank'>repositório</a>
+                                <a href='https://github.com/jeiseldias' target='_blank' rel="noreferrer">visitar</a>
+                                <a href='https://github.com/jeiseldias' target='_blank' rel="noreferrer">repositório</a>
                             </div>
                         </div>
 
@@ -472,8 +472,8 @@ export default function Home() {
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non sem massa. Nulla tincidunt, quam at mollis aliquam, quam erat porttitor nunc, non dictum dui est id ligula.</p>
 
                             <div className={styles.WorkButtons}>
-                                <a href='https://github.com/jeiseldias' target='_blank'>visitar</a>
-                                <a href='https://github.com/jeiseldias' target='_blank'>repositório</a>
+                                <a href='https://github.com/jeiseldias' target='_blank' rel="noreferrer">visitar</a>
+                                <a href='https://github.com/jeiseldias' target='_blank' rel="noreferrer">repositório</a>
                             </div>
                         </div>
 
@@ -483,8 +483,8 @@ export default function Home() {
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non sem massa. Nulla tincidunt, quam at mollis aliquam, quam erat porttitor nunc, non dictum dui est id ligula.</p>
 
                             <div className={styles.WorkButtons}>
-                                <a href='https://github.com/jeiseldias' target='_blank'>visitar</a>
-                                <a href='https://github.com/jeiseldias' target='_blank'>repositório</a>
+                                <a href='https://github.com/jeiseldias' target='_blank' rel="noreferrer">visitar</a>
+                                <a href='https://github.com/jeiseldias' target='_blank' rel="noreferrer">repositório</a>
                             </div>
                         </div>
 
@@ -494,8 +494,8 @@ export default function Home() {
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non sem massa. Nulla tincidunt, quam at mollis aliquam, quam erat porttitor nunc, non dictum dui est id ligula.</p>
 
                             <div className={styles.WorkButtons}>
-                                <a href='https://github.com/jeiseldias' target='_blank'>visitar</a>
-                                <a href='https://github.com/jeiseldias' target='_blank'>repositório</a>
+                                <a href='https://github.com/jeiseldias' target='_blank' rel="noreferrer">visitar</a>
+                                <a href='https://github.com/jeiseldias' target='_blank' rel="noreferrer">repositório</a>
                             </div>
                         </div>
 
@@ -505,8 +505,8 @@ export default function Home() {
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non sem massa. Nulla tincidunt, quam at mollis aliquam, quam erat porttitor nunc, non dictum dui est id ligula.</p>
 
                             <div className={styles.WorkButtons}>
-                                <a href='https://github.com/jeiseldias' target='_blank'>visitar</a>
-                                <a href='https://github.com/jeiseldias' target='_blank'>repositório</a>
+                                <a href='https://github.com/jeiseldias' target='_blank' rel="noreferrer">visitar</a>
+                                <a href='https://github.com/jeiseldias' target='_blank' rel="noreferrer">repositório</a>
                             </div>
                         </div>
                     </div>
