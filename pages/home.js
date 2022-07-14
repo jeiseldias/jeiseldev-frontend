@@ -3,18 +3,304 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons'
 import styles from '../styles/New.module.css'
 
-import { GoogleMap, useLoadScript, Marker } from '@react-google-maps/api'
+import { GoogleMap, useLoadScript, InfoBox } from '@react-google-maps/api'
 
 export default function Home() {
     const { isLoaded } = useLoadScript({ 
         googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
     });
 
-    const MapCenter = {lat:-22.73293, lng: -45.11413};
+    const MapCenter = {lat:-22.732, lng: -45.114};
     const MapOptions = {
         disableDefaultUI: true,
         disableDoubleClickZoom: true,
-        
+        styles: [
+            {
+                "featureType": "all",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "saturation": 36
+                    },
+                    {
+                        "color": "#000000"
+                    },
+                    {
+                        "lightness": 40
+                    }
+                ]
+            },
+            {
+                "featureType": "all",
+                "elementType": "labels.text.stroke",
+                "stylers": [
+                    {
+                        "visibility": "on"
+                    },
+                    {
+                        "color": "#000000"
+                    },
+                    {
+                        "lightness": 16
+                    }
+                ]
+            },
+            {
+                "featureType": "all",
+                "elementType": "labels.icon",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "featureType": "administrative",
+                "elementType": "geometry.fill",
+                "stylers": [
+                    {
+                        "color": "#000000"
+                    },
+                    {
+                        "lightness": 20
+                    }
+                ]
+            },
+            {
+                "featureType": "administrative",
+                "elementType": "geometry.stroke",
+                "stylers": [
+                    {
+                        "color": "#000000"
+                    },
+                    {
+                        "lightness": 17
+                    },
+                    {
+                        "weight": 1.2
+                    }
+                ]
+            },
+            {
+                "featureType": "administrative",
+                "elementType": "labels",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "featureType": "administrative.country",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "visibility": "simplified"
+                    }
+                ]
+            },
+            {
+                "featureType": "administrative.country",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "visibility": "simplified"
+                    }
+                ]
+            },
+            {
+                "featureType": "administrative.country",
+                "elementType": "labels.text",
+                "stylers": [
+                    {
+                        "visibility": "simplified"
+                    }
+                ]
+            },
+            {
+                "featureType": "administrative.province",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "featureType": "administrative.locality",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "visibility": "simplified"
+                    },
+                    {
+                        "saturation": "-100"
+                    },
+                    {
+                        "lightness": "30"
+                    }
+                ]
+            },
+            {
+                "featureType": "administrative.neighborhood",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "featureType": "administrative.land_parcel",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "featureType": "landscape",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "visibility": "simplified"
+                    },
+                    {
+                        "gamma": "0.00"
+                    },
+                    {
+                        "lightness": "74"
+                    }
+                ]
+            },
+            {
+                "featureType": "landscape",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#000000"
+                    },
+                    {
+                        "lightness": 20
+                    }
+                ]
+            },
+            {
+                "featureType": "landscape.man_made",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "lightness": "3"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#000000"
+                    },
+                    {
+                        "lightness": 21
+                    }
+                ]
+            },
+            {
+                "featureType": "road",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "visibility": "simplified"
+                    }
+                ]
+            },
+            {
+                "featureType": "road.highway",
+                "elementType": "geometry.fill",
+                "stylers": [
+                    {
+                        "color": "#000000"
+                    },
+                    {
+                        "lightness": 17
+                    }
+                ]
+            },
+            {
+                "featureType": "road.highway",
+                "elementType": "geometry.stroke",
+                "stylers": [
+                    {
+                        "color": "#000000"
+                    },
+                    {
+                        "lightness": 29
+                    },
+                    {
+                        "weight": 0.2
+                    }
+                ]
+            },
+            {
+                "featureType": "road.arterial",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#000000"
+                    },
+                    {
+                        "lightness": 18
+                    }
+                ]
+            },
+            {
+                "featureType": "road.local",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#000000"
+                    },
+                    {
+                        "lightness": 16
+                    }
+                ]
+            },
+            {
+                "featureType": "transit",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#000000"
+                    },
+                    {
+                        "lightness": 19
+                    }
+                ]
+            },
+            {
+                "featureType": "water",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#000000"
+                    },
+                    {
+                        "lightness": 17
+                    }
+                ]
+            }
+        ]
     };
 
     if (!isLoaded) return <div>Loading</div>;
@@ -61,13 +347,13 @@ export default function Home() {
                     <div className={styles.ColumnResume}>
                         <h2>Sobre</h2>
 
-                        <p>I’m a Front-End Developer located in Poland. I have a serious passion for UI effects, animations and creating intuitive, dynamic user experiences.</p>
+                        <p>Sou um desenvolvedor brasileiro. Tenho paixão pela área de desenvolvimento de um modo geral. Iniciei meus estudos através do Visual Basic no final da década de 90 e de lá pra cá tive contato com as mais diversas tecnologias.</p>
 
-                        <p>Well-organised person, problem solver, independent employee with high attention to detail. Fan of MMA, outdoor activities, TV series and English literature. A family person and father of two fractious boys,</p>
+                        <p>Sou uma pessoa organizada com um bom raciocínio lógico e muita curiosidade em aprender coisas novas. Sou um fã de futebol, séries, filmes, livros e jogos. Um cara familiar e pai de três filhas.</p>
 
-                        <p>Interested in the entire frontend spectrum and working on ambitious projects with positive people.</p>
+                        <p>Interessado em projetos full stack JavaScript e em trabalhar em projetos ambiciosos e pessoas positivas.</p>
 
-                        <p><span>Let's make something special.</span></p>
+                        <p><span>Vamos criar algo especial juntos?</span></p>
                     </div>
 
                     <div className={styles.ColumnImage}>
@@ -79,34 +365,44 @@ export default function Home() {
                     <div className={styles.ColumnResume}>
                         <h2>Habilidades & <br />Experiência</h2>
 
-                        <p>Since beginning my journey as a freelance developer nearly 10 years ago, I’ve done remote work for agencies, consulted for startups, and collaborated with talented people to create web products for both business and consumer use.</p>
+                        <p>Em meu ambiente profissional tenho atuado mais na área gerencial da Tecnologia da Informação, deixando a alguns anos o desenvolvimento somente como objetivo de estudo e para projetos pessoais.</p>
                         
-                        <p>I create successful responsive websites that are fast, easy to use, and built with best practices. The main area of my expertise is front-end development, HTML, CSS, JS, building small and medium web apps, custom plugins, features, animations, and coding interactive layouts.</p>
+                        <p>Porém, a partid início de 2022 tenho desprendido um esforço maior em meus estudos como DEV na tentativa de conseguir novas oportunidades, principalmente como Freelancer.</p>
 
-                        <p>I also have full-stack developer experience with popular open-source CMS like (WordPress, Drupal, Magento, Keystone.js and others) .</p>
+                        <p>Sendo assim tenho focado bastante meus estudos na Full Stack JavaScript e em todas as tecnologias que podem ser importantes no processo de trabalho de um DEV, por exemplo, Git, Docker, bancos de dados não relacionais, etc.</p>
 
-                        <p>Visit my <span>LinkedIn</span> profile for more details or just <span>contact</span> me.</p>
+                        <p>Visite meu perfil no <span>GitHub</span> para mais detalhes ou entre em <span>contato</span> comigo.</p>
                     </div>
 
                     <div className={styles.ColumnData}>
-                        <p>Front-end</p>
+                        <p>HTML</p>
                         <div className={styles.ProgressBar}>
-                            <div className={styles.Progress} style={{width: '50%', backgroundColor: 'var(--brown)'}}></div>
+                            <div className={styles.Progress} style={{width: '100%', backgroundColor: 'var(--brown)'}}></div>
                         </div>
 
-                        <p>Front-end</p>
+                        <p>CSS</p>
                         <div className={styles.ProgressBar}>
-                            <div className={styles.Progress} style={{width: '50%', backgroundColor: 'var(--red)'}}></div>
+                            <div className={styles.Progress} style={{width: '100%', backgroundColor: 'var(--red)'}}></div>
                         </div>
 
-                        <p>Front-end</p>
+                        <p>React</p>
                         <div className={styles.ProgressBar}>
-                            <div className={styles.Progress} style={{width: '50%', backgroundColor: 'var(--yellow)'}}></div>
+                            <div className={styles.Progress} style={{width: '70%', backgroundColor: 'var(--yellow)'}}></div>
                         </div>
 
-                        <p>Front-end</p>
+                        <p>Node</p>
                         <div className={styles.ProgressBar}>
-                            <div className={styles.Progress} style={{width: '50%', backgroundColor: 'var(--pink)'}}></div>
+                            <div className={styles.Progress} style={{width: '90%', backgroundColor: 'var(--pink)'}}></div>
+                        </div>
+
+                        <p>Git</p>
+                        <div className={styles.ProgressBar}>
+                            <div className={styles.Progress} style={{width: '60%', backgroundColor: 'var(--purple)'}}></div>
+                        </div>
+
+                        <p>Docker</p>
+                        <div className={styles.ProgressBar}>
+                            <div className={styles.Progress} style={{width: '0', backgroundColor: 'var(--green)'}}></div>
                         </div>
                     </div>
                 </div>
@@ -220,7 +516,7 @@ export default function Home() {
                     <div className={styles.ColumnResume}>
                         <h2>Contato</h2>
 
-                        <p>I’m interested in freelance opportunities – especially ambitious or large projects. However, if you have other request or question, don’t hesitate to use the form.</p>
+                        <p>Estou a procura de novas oportunidades como Freelancer, mas caso você outra proposta ou pergunta, não hesite em utilizar o formulário abaixo</p>
 
                         <input type={"text"} placeholder="Nome" />
                         <input type={"text"} placeholder="E-mail" />
@@ -231,14 +527,12 @@ export default function Home() {
 
                     <div className={styles.ColumnData}>
                         <GoogleMap 
-                        zoom={18} 
-                        center={{lat:-22.73293, lng: -45.11413}} 
-                        clickableIcons={false}
-                        options={MapOptions}
-                        mapContainerClassName="map-container"
-                        >
-                            <Marker position={{lat:-22.733240, lng: -45.113932}} />
-                        </GoogleMap>
+                            zoom={18} 
+                            center={MapCenter} 
+                            clickableIcons={false}
+                            options={MapOptions}
+                            mapContainerClassName="map-container"
+                        ></GoogleMap>
                     </div>
                 </div>
             </section>
