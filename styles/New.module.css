@@ -295,3 +295,80 @@
 .Contact button:active {
     background-color: var(--gray);
 }
+
+@media(max-width: 992px){
+    .About h2, .Skills h2, .Portfolio h2, .Contact h2 {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+        margin-bottom: 0;
+    }
+
+    .Portfolio h2 {
+        margin-bottom: 16px;
+    }
+
+    .ColumnImage img {
+        margin-bottom: 32px;
+    }
+
+    .Contact {
+        padding-bottom: 48px;
+    }
+
+    .Infos {
+        width: 100%;
+    }
+
+    .Intro, .About, .Skills, .Portfolio, .Contact {
+        width: 100%;
+        height: auto;
+
+        padding: 20px 0;
+
+        flex-direction: column;
+    }
+
+    .Intro {
+        height: calc(100vh - 100px);
+
+        justify-content: center;
+    }
+
+    .About {
+        flex-direction: column-reverse;
+    }
+
+    .Intro h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+        letter-spacing: 5px;
+    }
+    
+    .Intro h1 span {
+        color: var(--green);
+    }
+    
+    .Intro h1 strong {
+        color: var(--blue);
+    }
+
+    .map-container {
+        display: none;
+    }
+    
+    .Menu {
+        display: none;
+    }
+
+    .Portfolio {
+        margin-bottom: 32px;
+    }
+
+    .Projects {
+        flex-direction: column;
+    }
+
+    .Work {
+        max-width: 100%;
+    }
+}
