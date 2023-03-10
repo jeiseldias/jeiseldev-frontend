@@ -23,7 +23,7 @@ function Skills() {
 
                 <p>CSS</p>
                 <ProgressBar>
-                    <Progress style={{width: '100%', backgroundColor: 'var(--red)'}} />
+                    <Progress style={{width: '90%', backgroundColor: 'var(--purple)'}} />
                 </ProgressBar>
 
                 <p>React</p>
@@ -38,12 +38,12 @@ function Skills() {
 
                 <p>Git</p>
                 <ProgressBar>
-                    <Progress style={{width: '60%', backgroundColor: 'var(--purple)'}} />
+                    <Progress style={{width: '60%', backgroundColor: 'var(--red)'}} />
                 </ProgressBar>
 
                 <p>Docker</p>
                 <ProgressBar>
-                    <Progress style={{width: '0', backgroundColor: 'var(--green)'}} />
+                    <Progress style={{width: '20%', backgroundColor: 'var(--blue)'}} />
                 </ProgressBar>
             </ColumnData>
         </SkillsContainer>

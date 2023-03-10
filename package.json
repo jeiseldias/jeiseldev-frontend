@@ -15,8 +15,10 @@
     "@fortawesome/react-fontawesome": "^0.1.18",
     "@react-google-maps/api": "^2.12.0",
     "next": "12.1.6",
-    "react": "18.1.0",
-    "react-dom": "18.1.0",
+    "nodemailer": "^6.9.1",
+    "nodemailer-react": "^1.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "styled-components": "^5.3.5"
   },
   "devDependencies": {

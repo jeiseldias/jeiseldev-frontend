@@ -14,7 +14,7 @@ function Menu() {
                     <li>Sobre</li>
                     <li>Skills</li>
                     <li>Portfólio</li>
-                    <li>Contato</li>
+                    
                 </ul>
             </Links>
 
