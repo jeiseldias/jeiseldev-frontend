@@ -1,16 +1,8 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons'
-import styles from '../styles/New.module.css'
-
-import { GoogleMap, useLoadScript, InfoBox } from '@react-google-maps/api'
-
-import Menu from '../components/Menu'
-import Intro from '../components/Intro'
-import About from '../components/About'
-import Skills from '../components/Skills'
-import Portfolio from '../components/Portfolio'
-import Contact from '../components/Contact'
+import styles from '../styles/Home.module.css'
 
 export default function Home() {
     return (
@@ -21,14 +13,30 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <Menu />
+            <section className={styles.Logo}>
+                <Image src='/logo.png' alt='Logo jeisel.dev' width={125} height={125} />
+            </section>
 
-            <section className={styles.Infos}>
-                <Intro />
-                <About />
-                <Skills />
-                <Portfolio />
-                
+            <section className={styles.SocialMedia}>
+                <ul>
+                    <li>
+                        <a href='https://www.linkedin.com/in/jeisel/' target='_blank' rel="noopener noreferrer">
+                            <FontAwesomeIcon icon={faLinkedin} />
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href='https://github.com/jeiseldias' target='_blank' rel="noopener noreferrer">
+                            <FontAwesomeIcon icon={faGithub} />
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href='https://www.instagram.com/jeiselsilva/' target='_blank' rel="noopener noreferrer">
+                            <FontAwesomeIcon icon={faInstagram} />
+                        </a>
+                    </li>
+                </ul>
             </section>
         </div>
   )
